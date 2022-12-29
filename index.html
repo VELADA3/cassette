@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+	<meta name="author" content="Velada.eth">
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="./style.css">
+	<title>Velada's Cassette</title>
+	<link rel="icon" type="image/x-icon" href="./bin/img/favicon.ico">
+</head>
+
+<body>
+	<div id="loading"><div class="loader"></div></div>
+	<div id="loaded">
+		<div id="tray">
+			<button class="btn" id="rew">
+				<svg class="btnImg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+					<polygon class="cls-b" points="352.14 500 943.57 795.95 943.57 204.05 352.14 500"/>
+					<polygon class="cls-b" points="56.43 500 647.86 795.95 647.86 204.05 56.43 500"/>
+				</svg>
+			</button>
+			<button class="btn" id="play">
+				<svg class="btnImg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+					<polygon class="cls-b" points="795.71 500 204.29 204.05 204.29 795.95 795.71 500"/>
+				</svg>
+			</button>
+			<button class="btn" id="pause">
+				<svg class="btnImg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+					<rect class="cls-b" x="290.4" y="204.03" width="139.73" height="591.94" transform="translate(720.54 1000) rotate(180)"/>
+					<rect class="cls-b" x="569.87" y="204.03" width="139.73" height="591.94" transform="translate(1279.46 1000) rotate(180)"/>
+				</svg>
+			</button>
+			<button class="btn" id="fwd">
+				<svg class="btnImg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+					<polygon class="cls-b" points="647.86 500 56.43 204.05 56.43 795.95 647.86 500"/>
+					<polygon class="cls-b" points="943.57 500 352.14 204.05 352.14 795.95 943.57 500"/>
+				</svg>
+			</button>
+		</div>
+		
+		<div class="tape">
+			<object id="casBody" data="./bin/img/tape.svg" type="image/svg+xml"></object>
+			<object id="faceB" data="./bin/img/faceB.svg" type="image/svg+xml"></object>
+			<object id="faceA" data="./bin/img/faceA.svg" type="image/svg+xml"></object>
+		</div>
+						
+		<div id="eject">
+			<button class="btn" id="flip">
+				<svg class="btnImg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+					<rect class="cls-b" x="430.13" y="514.31" width="139.73" height="591.94" transform="translate(-310.28 1310.28) rotate(-90)"/>
+					<polygon class="cls-b" points="500 119.85 204.05 711.28 795.95 711.28 500 119.85"/>
+				</svg>
+			</button>
+		</div>
+	</div>
+<script src="./player.js"></script>
+</body>
+</html>
